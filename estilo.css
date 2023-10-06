@@ -6,7 +6,6 @@
     padding: 0;
 }
 html{
-    /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
 }
 /* MENU */
@@ -382,29 +381,7 @@ html{
 .contacto button:hover .overlay{
     width: 100%;
 }
-.contacto .col img{
-    width: 100%;
-}
-.contacto .col .info{
-    position: absolute;
-    top: 40%;
-    background-color: #252A2E;
-    padding: 20px;
-    max-width: 350px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.contacto .col .info ul{
-    list-style: none;
-}
-.contacto .col .info ul li{
-    margin-bottom: 20px;
-}
-.contacto .col .info ul li i{
-    color: #1CB698;
-    display: inline-block;
-    margin-right: 20px;
-}
+
 /*SECCION FOOTER*/
 footer{
     background-color: #252A2E;
@@ -483,7 +460,7 @@ footer .arriba{
 
     .skills .contenedor-conocimientos .fila{
         display: block;
-        width: 50%;
+        width: 100%;
     }
 
     .portfolio .galeria{
