@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Ignacio Bee Bianco</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/IgnacioBeeBianco.png" alt="">
+            </div>
+            <h1>Ignacio Bee Bianco</h1>
+            <h2>Tecnico Universitario en Programación</h2>
+            <div class="redes">
+                <a href="https://github.com/IgnacioBeeBianco?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ignacio-bee-bianco-00778615a/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Ignacio Bee Bianco.</span> Me encuentro estudiando una tecnicatura Universitaria en programación en la Facultad Tecnologica Nacional (UTN) - General Pacheco</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            XX-XX-1997
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            XX-XXXX-XXXX
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            ignacio.bee@alumnos.frgp.utn.edu.ar
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONOCIMIENTOS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>CONOCIMIENTOS</h2>
+            <div class="contenedor-conocimientos">
+                <div class="fila">                    
+                        <div class="skill">
+                            <img src="img/js.png" alt="">
+                        </div>
+                        <div class="skill">
+                            <img src="img/html.png" alt="">
+                        </div>
+                        <div class="skill">
+                            <img src="img/css.png" alt="">
+                        </div>
+                        <div class="skill">
+                            <img src="img/c++.png" alt="">
+                        </div>
+                        <div class="skill">
+                            <img src="img/cshrap.png" alt="">
+                        </div>
+                        <div class="skill">
+                            <img src="img/sql.png" alt="">
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PROYECTOS -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PROYECTOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/JuegoRevenge.png" alt="">
+                    <div class="overlay">
+                        <a href="https://github.com/IgnacioBeeBianco/Juego-Revenge"><h3>Juego Revenge</h3></a>
+                        <p>Programado en C++</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/TPWinForm-Articulos.png" alt="">
+                    <div class="overlay">
+                        <a href="https://github.com/IgnacioBeeBianco/TP-WinForm"><h3>TP WinForm - Articulos</h3></a>
+                        <p>Programado en C#</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/TPRotacionOperariosToyota.png" alt="">
+                    <div class="overlay">
+                        <a href="https://github.com/IgnacioBeeBianco/Sistema-de-Rotacion-de-Linea-de-Puertas-de-Ensamble-Toyota-Argentina"><h3>TP Rotacion Operarios Toyota</h3></a>
+                        <p>Programado en C++</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button id="enlaceButton">
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/IgnacioBeeBianco?tab=repositories"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ignacio-bee-bianco-00778615a/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
